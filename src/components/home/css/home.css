@@ -1,6 +1,13 @@
-.contenedor {
+.contenedorHome {
+  background-color: #edf6f9;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.contenedorCartas {
   display: flex;
   flex-wrap: wrap;
+  background-color: #e2ece9;
 }
 .separador {
   flex: 10%;
@@ -16,7 +23,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #4cc9f0;
+  background-color: #2e788f;
   border: none;
   border-radius: 0px 10px 10px 0px;
   color: white;
@@ -27,22 +34,27 @@
   cursor: pointer;
 }
 .navButton:hover {
-  background-color: #45a049;
+  background-color: #fff;
+  color: #2e788f;
+  border: 3px solid #2e788f;
 }
 
 .Nopressed {
-  color: #1a759f;
+  color: #3b3b3b;
   font: 2em sans-serif;
+  font-weight: bold;
 }
 
 .load {
-  width: 100%;
-  background-color: #4cc9f0;
+  width: 80%;
+  background-color: #2e788f;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
+  font-size: 1.3em;
+  font-weight: bold;
   cursor: pointer;
 }
 

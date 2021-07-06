@@ -25,12 +25,12 @@ function Home(props) {
     history.push("/");
   };
   return (
-    <div>
+    <div className="contenedorHome">
       <button onClick={logout} className="navButton">
         Logout
       </button>
 
-      <div className="contenedor">
+      <div className="contenedorCartas">
         <div className="separador"></div>
         <div className="columna">
           {data ? (

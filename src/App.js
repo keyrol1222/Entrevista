@@ -11,7 +11,6 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <h1 className="h1Loggin">Por favor logear para continuar</h1>
             <Login />
           </Route>
           <Route exact path="/error">
