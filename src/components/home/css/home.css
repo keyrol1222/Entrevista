@@ -42,11 +42,13 @@
 .Nopressed {
   color: #3b3b3b;
   font: 2em sans-serif;
+  text-align: center;
   font-weight: bold;
+  width: 100%;
 }
 
 .load {
-  width: 80%;
+  width: 40%;
   background-color: #2e788f;
   color: white;
   padding: 14px 20px;

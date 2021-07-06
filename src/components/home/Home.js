@@ -49,14 +49,14 @@ function Home(props) {
               );
             })
           ) : (
-            <h2 className="Nopressed">Favor cargar los datos</h2>
+            <h2 className="Nopressed">Favor pulsar para cargar los datos</h2>
           )}
 
           {data ? (
             true
           ) : (
             <button onClick={loadPayload} className="load">
-              load data
+              Cargar
             </button>
           )}
         </div>
