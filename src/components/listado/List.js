@@ -5,7 +5,7 @@ function List(props) {
     <div className="card">
       <ul className="cardContainer">
         <h3>{props.description}</h3>
-
+        <hr />
         <li>|weight: {props.weight}|</li>
         <li> |priceToPay: {props.priceToPay}|</li>
         <li>|supplier:{props.supplier}|</li>
