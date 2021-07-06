@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import List from "../listado/List";
 import "./css/home.css";
@@ -27,27 +26,41 @@ function Home(props) {
   };
   return (
     <div>
-      <button onClick={logout}>Logout</button>
-      <button onClick={loadPayload}>load data</button>
+      <button onClick={logout} className="navButton">
+        Logout
+      </button>
 
       <div className="contenedor">
-        {data ? (
-          data.map((payload) => {
-            return (
-              <List
-                description={payload.description}
-                weight={payload.weight}
-                priceToPay={payload.priceToPay}
-                supplier={payload.supplier}
-                courier={payload.courier}
-                courierTracking={payload.courierTracking}
-                internalTracking={payload.internalTracking}
-              />
-            );
-          })
-        ) : (
-          <h2>no se puede presentar los datos</h2>
-        )}
+        <div className="separador"></div>
+        <div className="columna">
+          {data ? (
+            data.map((payload) => {
+              return (
+                <List
+                  description={payload.description}
+                  weight={payload.weight}
+                  priceToPay={payload.priceToPay}
+                  supplier={payload.supplier}
+                  courier={payload.courier}
+                  courierTracking={payload.courierTracking}
+                  internalTracking={payload.internalTracking}
+                  key={payload.description + payload.internalTracking}
+                />
+              );
+            })
+          ) : (
+            <h2 className="Nopressed">Favor cargar los datos</h2>
+          )}
+
+          {data ? (
+            true
+          ) : (
+            <button onClick={loadPayload} className="load">
+              load data
+            </button>
+          )}
+        </div>
+        <div className="separador"></div>
       </div>
     </div>
   );

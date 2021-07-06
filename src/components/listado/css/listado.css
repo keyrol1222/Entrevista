@@ -1,2 +1,17 @@
 .card {
+  background-color: #fafafa;
+  border-bottom: 5px solid #999999;
+  width: 20em;
+  font: 1em sans-serif;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+.card h3 {
+  color: #161a1d;
+}
+.card li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

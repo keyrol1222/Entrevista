@@ -1,0 +1,11 @@
+.Errorh1 {
+  font: 2em sans-serif;
+  font-weight: bold;
+  color: #1a759f;
+}
+
+@media (max-width: 500px) {
+  .Errorh1 {
+    font-size: 1.5em;
+  }
+}
